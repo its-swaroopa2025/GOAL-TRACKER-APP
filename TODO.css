@@ -1,0 +1,275 @@
+*{
+  box-sizing: border-box;
+}
+body{
+    font-family: poppins;
+    /* background-color: #fff; */
+    margin:0px;
+}
+main{
+    margin: 16px;
+    padding: 0px 16px;
+    
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom:4px;
+}
+
+.app-container{
+    background:#FBFBFB;
+    box-shadow: 0 0 8px 0px rgba(0,0,0,0.1);
+    max-width: 660px;
+    border-radius: 15px;
+    padding: 32px 48px;
+    margin-inline: auto;
+}
+.sun{
+    width: 40px;
+    vertical-align: middle;
+    margin-left:5px;
+  
+}
+.sun{
+    width:40px;
+    transition:0.4s ease;
+}
+
+.sun:hover{
+    filter: brightness(1.5) drop-shadow(0 0 10px gold);
+}
+
+
+.progress-bar{
+   
+    height: 30px;
+    background: #ddd;
+    border-radius: 10px;
+    
+}
+.progress-value{
+  max-width:100%;
+    width:0%;   /* progress percentage */
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ff6a00, #ee0979,blue,green);
+    transition: width 0.2s ease-in-out ;
+    
+   
+
+}
+ .progress-value span{
+  font-size: 12px;
+ padding-left:20px;
+   min-width: max-content;
+   white-space: nowrap;
+  
+}
+.progress-label{
+  margin-bottom:-6px;
+  font-size: 14px;
+}
+
+.error-label{
+  color:red;
+  font-size: 12px;
+  visibility: hidden;
+}
+
+.goal-container{
+  border:1px solid rgba(0,0,0,0.1);
+  border-radius: 17px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  padding:0 22px;
+  background: white;
+  margin-bottom: 42px;
+
+}
+.custom-checkbox{
+  height:24px ;
+  width: 24px; 
+  border: 2px solid rgba(97,72,8,0.32);
+  border-radius: 50%;
+  flex-shrink: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.check-icon{
+    display: none;
+    width: 20px;
+}
+.completed .check-icon{
+   display: block;
+}
+
+.completed .goal-input{
+    color: green;
+    text-decoration: line-through;
+}
+
+.goal-input{
+  padding: 22px;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  flex-grow: 1;
+
+   width: 100%;
+
+}
+.quote{
+  font-size: 16px;
+  text-align: center;
+}
+
+.completed .custom-checkbox{
+       background: green;
+       border-color: green;
+  }
+  
+
+@media (max-width:668px) {
+    h1{
+       font-size: 32px; 
+    }
+    .app-container{
+        padding: 16px 32px;
+    }
+    .goal-container{
+      height: 64px;
+       margin-bottom: 24px;
+       border-radius: 12px;
+
+    }
+    .custom-checkbox{
+      height: 20px;
+      width: 20px;
+    }
+    .progress-bar{
+      height: 24px;
+    }
+}
+
+.button-container{
+      display: grid;
+      height: 100%;
+      place-items:center;
+}
+
+
+.btn a{
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #000;
+  text-align: center;
+  position: relative;
+background: linear-gradient(
+    90deg,
+    #00c6ff,
+    #0072ff,
+    #9b59b6,
+    #ff7e5f,
+    #f9d423,
+    #00c6ff
+  );
+}
+.btn a span{
+  height: 88%;
+  width: 96%;
+  background: white;
+  display: block;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  line-height: 40px;
+  color:#FBFBFB;
+  border-radius:50% ;
+  font-size: 20px;
+}
+.btn a:hover{
+  animation:animate 0.5s linear infinite;
+
+}
+@keyframes animate{
+  100%{
+       filter:hue-rotate(-360deg);
+  }
+}
+
+
+/* text background-gradient */
+
+
+.gradient-text{
+  font-size:60px;
+  font-weight:bold;
+
+  background: linear-gradient(
+    90deg,
+    #00c6ff,
+    #0072ff,
+    #9b59b6,
+    #ff7e5f,
+    #f9d423,
+    #00c6ff
+  );
+
+  background-size: 300%;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientMove 6s linear infinite;
+}
+
+@keyframes gradientMove{
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 300%;
+  }
+}
+
+/* app background */
+
+.app-container{
+   
+    background:rgba(255,255,255,0.2);
+    
+
+    border-radius:15px;
+
+    border:2px solid transparent;
+    background-clip:padding-box;
+
+    position:relative;
+}
+
+.app-container::before{
+    content:"";
+    position:absolute;
+    inset:-2px;
+
+    background: linear-gradient(45deg,#ff6a00,#ee0979,#36d1dc);
+    z-index:-1;
+    border-radius:15px;
+
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate{
+    0%{filter:hue-rotate(0deg);}
+    100%{filter:hue-rotate(360deg);}
+}
+
+

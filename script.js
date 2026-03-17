@@ -224,13 +224,9 @@ document.querySelectorAll('.goal-input').forEach((input) => {
   }
 
 })
-<<<<<<< HEAD
-updateProgress()
-=======
-
-//--------------------DELETE-GOAL
-
-
 
 updateProgress()
->>>>>>> a215637 (Renamed files and fixed delete functionality with localStorage sync)
+
+
+
+

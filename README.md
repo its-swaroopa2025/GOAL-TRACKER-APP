@@ -14,6 +14,7 @@ https://goal-tracker-by-Swaroopa2026.netlify.app
 - Add daily goals
 - Mark goals as completed
 - Track progress using a progress bar
+- Delete goals
 - Data stored using localStorage
 - Simple and clean user interface
 
@@ -33,6 +34,10 @@ git clone https://github.com/its-swaroopa2025/GOAL-TRACKER-APP.git
 
 3. Open the `index.html` file in your browser
 
+     (OR)
+   Live site is also available
+
+
 ## Project Structure
 goal-tracker-app
 │
@@ -43,7 +48,6 @@ goal-tracker-app
 
 ## Future Improvements
 - Edit goals
-- Delete goals 
 - Add dark
 - Deadline for goals
 

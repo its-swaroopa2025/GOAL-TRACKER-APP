@@ -51,6 +51,19 @@ goal-tracker-app
 - Add dark
 - Deadline for goals
 
+
+## Preview
+
+
+<img width="704" height="578" alt="Screenshot from 2026-03-23 15-40-01" src="https://github.com/user-attachments/assets/ac867f27-70ff-4452-a1e8-ffb51903da51" />
+
+<img width="704" height="578" alt="Screenshot from 2026-03-23 15-40-27" src="https://github.com/user-attachments/assets/6d49cb3b-29c9-439a-8886-7c84abb6032d" />
+
+
+<img width="704" height="578" alt="Screenshot from 2026-03-23 15-41-43" src="https://github.com/user-attachments/assets/0e95c5ad-77b0-4806-ba90-aeaff083b84d" />
+
+
+
 ## Contributing
 Contributions are welcome. If you would like to improve this project, feel free to fork the repository and submit a pull request.
 

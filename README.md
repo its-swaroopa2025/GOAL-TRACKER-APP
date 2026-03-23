@@ -48,7 +48,6 @@ goal-tracker-app
 
 ## Future Improvements
 - Edit goals
-- Add dark
 - Deadline for goals
 
 
